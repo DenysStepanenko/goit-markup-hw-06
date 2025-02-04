@@ -660,15 +660,15 @@ body {
         max-width: 1440px;
     }
 
-    @media (min-resolution: 192dpi),
-    (min-device-pixel-ratio: 2) {
-        .section-first {
-            background-image: linear-gradient(to bottom,
-                    rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)),
-                url('../images/hero-bg@2x.jpg');
+        @media (min-resolution: 192dpi),
+        (min-device-pixel-ratio: 2) {
+            .section-first {
+                background-image: linear-gradient(to bottom,
+                        rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url('../images/hero-bg@2x.jpg');
+            }
         }
-    }
 
     @media (min-resolution: 288dpi),
     (min-device-pixel-ratio: 3) {
