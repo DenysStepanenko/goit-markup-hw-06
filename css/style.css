@@ -105,14 +105,6 @@ body {
     }
 }
 
-@media screen and (max-width: 768px) {
-
-    .address-info,
-    .items {
-        display: none;
-    }
-}
-
 .logo {
     text-decoration: none;
     color: #4d5ae5;
@@ -430,11 +422,6 @@ body {
     }
 }
 
-@media screen and (min-width: 1158px) {
-    .menu-mobile {
-        display: none;
-    }
-}
 
 /* ================================ */
 /* ======== SECTION-FIRST ========= */
@@ -568,6 +555,7 @@ body {
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url('../images/hero-bg.jpg');
         max-width: 1440px;
+        height: 600px;
     }
 
     @media (min-resolution: 192dpi),
@@ -590,6 +578,7 @@ body {
 
     .page-title {
         margin-bottom: 48px;
+        
     }
 }
 
@@ -689,18 +678,14 @@ body {
     margin-right: 0;
 }
 
-@media screen and (min-width: 768px) {
-    .services {
-        gap: 72px 24px;
-    }
-
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  
     .section-third .services {
         gap: 64px 24px;
     }
 
     .section-fourth .services {
         flex-direction: row;
-        flex-wrap: wrap;
         gap: 72px 24px;
     }
 
@@ -714,8 +699,6 @@ body {
         font-weight: 700;
     }
 
-
-
     .section-third .third-title {
         text-align: center;
     }
@@ -727,8 +710,10 @@ body {
 }
 
 @media screen and (min-width: 1158px) {
-    .table-sc {
-        width: calc((100% - 72px) / 4);
+    .third-title {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: left;
     }
 
     .p-first-sect {
@@ -1011,16 +996,12 @@ body {
         width: 356px;
     }
 
-    .third-title {
-        text-align: left;
-        line-height: 1.11;
-        font-weight: 700;
-    }
 
     .section-third .third-title {
         text-align: center;
     }
-
+     
+   
     .portfolio {
         flex-basis: calc((100% - 24px) / 2);
     }
@@ -1270,6 +1251,7 @@ body {
 @media screen and (min-width: 1158px) {
     .footer {
         max-width: 100%;
+        height: 312px;
     }
 
     .footer-container {
