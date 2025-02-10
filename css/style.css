@@ -765,13 +765,10 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 1158px) {
    
-.section-fourth .services,
 .section-two .services {
 gap: 72px 24px;
 }
-.section-fourth .services {
-    justify-content: center;
-}
+
 .team-list {
     width: 356px;
     height: 120px;
@@ -789,22 +786,11 @@ gap: 72px 24px;
         text-align: center;
     } */
 
-    .section-third .services {
-        justify-content: center;
-        gap: 64px 24px;
-    }
-                .section-third .team-list {
-                    width: 264px;
-                    height: 428px;
-        
-                }
+
    
  
-        .section-fourth .team-list {
-            width: 356px;
-            height: 420px;
-            width: calc((100% - 72px) / 2)
-        }
+  
+       
        
 }
 
@@ -897,7 +883,18 @@ gap: 72px 24px;
     background-color: #404bbf;
 }
 
-
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+    .section-third .services {
+            justify-content: center;
+            gap: 64px 24px;
+        }
+    
+        .section-third .team-list {
+            width: 264px;
+            height: 428px;
+    
+        }
+    }
 
 /* Карточки (.portfolio-list, .card-container) */
 
@@ -1029,11 +1026,37 @@ gap: 72px 24px;
 
 
 /* Переопределения на Tablet */
+@media screen and (min-width: 768px) {
+ .section-fourth .card-container {
+     width: 356px;
+    height: 300px;
+ }
+.section-fourth .card-content {
+    width: 356px;
+    height: 120px;
+}
+
+  .section-fourth .services {
+    gap: 72px 24px;
+      justify-content: center;
+  }
+
+
+.portfolio-list {
+              width: 356px;
+              height: 420px;
+              width: calc((100% - 72px) / 2)
+          }
+.portfolio-list {
+    width: calc((100% - 24px) / 2)
+}
+}
+
+
+
+
 /* Переопределения на Desktop */
 @media screen and (min-width: 1158px) {
-    /* .card-container {
-        width: 264px;
-    } */
 
 .section-fourth .card-container {
     width: 360px;
@@ -1047,10 +1070,7 @@ gap: 72px 24px;
         letter-spacing: 0.0196em;
     }
 
-    .portfolio-list {
-  width: 360px;
-  height: 420px;
-}
+
 
     .section-fourth .services {
         gap: 40px 24px;
@@ -1061,22 +1081,18 @@ gap: 72px 24px;
 .section-fourth .card-content {
     width: 360px;
     height: 120px;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
-        border: 1px solid rgba(231, 233, 252, 1);
-        border-top: none;
-        background-color: #FFFFFF;
-        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-            0 1px 1px 0 rgba(46, 47, 66, 0.16),
-            0 1px 6px 0 rgba(46, 47, 66, 0.08);
-        padding: 32px 16px;
 }
-/* .card-container-overlay {
-    width: 360px;
-} */
+
+.portfolio-list {
+        width: 360px;
+        height: 420px;
+    }
+    .portfolio-list {
+        width: calc((100% - 48px) / 3)
+    }
 }
+
+
 
 /* .card-content {
     padding: 32px 16px;
@@ -1324,7 +1340,7 @@ gap: 72px 24px;
 
     .footer-container {
         width: 1440px;
-        justify-content: flex-start;
+        justify-content: center;
         flex-wrap: nowrap;
         padding: 100px 0;
         gap:0px;
