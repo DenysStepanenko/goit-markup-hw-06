@@ -649,8 +649,6 @@ body {
     text-align: center;
 }
 
-
-
 .section-fourth .third-title,
 .section-third .third-title {
     font-weight: 500;
@@ -671,14 +669,19 @@ body {
     flex-direction: column;
     gap: 72px; 
 }
+
 .team-list {
     display: flex;
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
-        gap: 8px;
-        
+        gap: 8px;    
 }
+
+.section-two .team-list {
+    align-items: center;
+}
+
 .section-fourth .services {
     
     gap: 48px;
@@ -754,7 +757,10 @@ body {
     justify-content: center\; */
 
  }
-
+ 
+ .section-two .team-list {
+     align-items: flex-start;
+ }
 
 }
 
