@@ -368,7 +368,6 @@ body {
 
 
 .mob-menu-link {
-    display: inline-block;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
@@ -404,13 +403,11 @@ body {
 }
 
 .mob-contacts {
-    display: inline-block;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link {
@@ -424,10 +421,6 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link:hover,
-.social-link:focus {
-    background-color: #31d0aa;
-}
 
 .icon-mobile {
     display: flex;
@@ -772,7 +765,6 @@ gap: 72px 24px;
 .team-list {
     width: 356px;
     height: 120px;
-    width:calc((100% - 72px) / 2)
  }
 
  .section-two .third-title {
@@ -781,17 +773,7 @@ gap: 72px 24px;
 .section-two .team-list {
     width: 356px;
 }
-    /* .section-third .third-title {
-        width: 356px;
-        text-align: center;
-    } */
-
-
-   
- 
-  
-       
-       
+    
 }
 
 
@@ -1045,7 +1027,6 @@ gap: 72px 24px;
 .portfolio-list {
               width: 356px;
               height: 420px;
-              width: calc((100% - 72px) / 2)
           }
 .portfolio-list {
     width: calc((100% - 24px) / 2)
@@ -1268,67 +1249,73 @@ gap: 72px 24px;
 
 /* ======================= 7.2 Footer Tablet ============================== */
 @media screen and (min-width: 768px) {
-    
-
-    .footer-container {
+.footer-container {
         flex-direction: row;
-        flex-wrap: wrap;
-        row-gap: 72px;
-        gap:24px;
+       
         align-items: flex-start;
         justify-content: left;
         padding: 96px 164px 96px 108px;
-        margin: 0 auto;
     }
 
-    .footer-block-one {
-        width: 264px;
-        height: 112px;
-        text-align: left;
-        
-    }
-    .footer-block-two {
-        width: 208px;
-        height: 80px;
-        padding: 0;
-    }
-    .footer-form {
-        width: 453px;
-        height: 80px;
-    }
-    .p-footer{
-        text-align: left;
-    }
-       
 
-    /* .social-media {
-        margin-top: 0;
-        text-align: left;
-    } */
+.footer-block-one {
+    width: 264px;
+    height: 112px;
+    text-align: left;
 
-    /* .social-media-text {
-        text-align: left;
-    } */
+}
 
-    .container-footer-form {
-        align-items: flex-start;
-        justify-content: start;
-    }
+.footer-block-two {
+    width: 208px;
+    height: 80px;
+    padding: 0;
+}
 
-    .footer-form {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
+
+
+.footer-form {
+    width: 453px;
+    height: 80px;
+}
+
+.p-footer {
+    text-align: left;
+}
+
+
+.container-footer-form {
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.footer-form {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.footer-input {
+    width: 264px;
+}
+
+.text-footer {
+    max-width: 264px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+    .footer-container {
+    flex-wrap: wrap;
+        row-gap: 72px;
         gap: 24px;
     }
-
-    .footer-input {
-        width: 264px;
+.container-footer-form {
+        padding-top: 72px;
     }
+   
 
-    .text-footer {
-        max-width: 264px;
-    }
+    
 }
 
 /* ======================= 7.3 Footer Desktop ============================= */
@@ -1339,13 +1326,13 @@ gap: 72px 24px;
     }
 
     .footer-container {
-        width: 1440px;
+        max-width: 1440px;
         justify-content: center;
         flex-wrap: nowrap;
         padding: 100px 0;
-        gap:0px;
 
     }
+
 
     .text-footer {
         width: 264px;
