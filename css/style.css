@@ -1207,6 +1207,11 @@ height: 312px;
     justify-content: center;
 }
 
+.footer .social-link:hover,
+.footer .social-link:focus {
+    background-color: #31d0aa;
+}
+
 .icon-bt-footer {
     fill: #f4f4fd;
 }
@@ -1327,6 +1332,8 @@ height: 312px;
 .footer-input {
     width: 264px;
 }
+
+
 
 .text-footer {
     max-width: 264px;
