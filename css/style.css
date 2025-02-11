@@ -49,10 +49,12 @@ p {
 
 section {
     padding: 96px 0;
+    margin: 0 auto;
 }
 @media screen and (min-width: 1158px) {
     section {
             padding: 120px 0;
+            margin: 0 auto;
 } 
 }
 
@@ -390,7 +392,6 @@ body {
     justify-content: flex-start;
     gap: 24px;
     font-style: normal;
-    padding-bottom: 53px;
 }
 
 
@@ -431,6 +432,7 @@ body {
     justify-content: flex-start;
     flex-direction: row;
     gap: 40px;
+    margin-top: 48px;
 }
 
 @media screen and (min-width: 768px) {
@@ -456,19 +458,26 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 72px 0;
     text-align: center;
     margin: 0 auto;
 }
+
+
 .section-first .container {
-    padding: 0;
+    padding: 72px 0;
     margin: 0;
 }
+
+@media screen and (min-width: 768px) {
+          .section-first .container {
+              padding: 188px 0;
+          }
+                  }
 
 
 .page-title {
         width: 216px;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
         line-height: 1.02;
         font-weight: 700;
         font-size: 36px;
@@ -483,7 +492,7 @@ body {
         font-size: 56px;
         line-height: 1.07143;
         width: 496px;
-        padding-bottom: 32px;
+        margin-bottom: 36px;
     }
 }
 .button {
@@ -550,7 +559,11 @@ body {
                 rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)), url('../images/hero-tablet-bg.jpg');
         height: 436px;
+        padding: 0;
     }
+    .section-first .container {
+    padding: 112px 0;
+        }
 
     @media (min-resolution: 192dpi),
     (min-device-pixel-ratio: 2) {
@@ -593,6 +606,8 @@ body {
         height: 600px;
         padding: 0;
     }
+   
+       
 
     @media (min-resolution: 192dpi),
     (min-device-pixel-ratio: 2) {
@@ -612,11 +627,7 @@ body {
         }
     }
 
-    .page-title {
-        padding-top: 188px;
-        padding-bottom: 48px;
-        
-    }
+
 }
 
 
@@ -629,8 +640,8 @@ body {
 
 
 .secondary-title {
-    padding: 0 0 72px 0;
-    margin: 0;
+    padding: 0;
+    margin: 0 0 72px 0;
     line-height: 1.12;
     font-weight: 700;
     letter-spacing: 0.02em;
@@ -660,14 +671,17 @@ body {
 .section-fourth .third-title {
     text-align: left;
 }
-
 .services {
     display:flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    
         justify-content: flex-start;
     flex-direction: column;
     gap: 72px; 
+    margin: 0 auto;
+}
+.section-third .services {
+    align-items: center;
 }
 
 .team-list {
@@ -712,14 +726,6 @@ body {
 
 
 
-@media screen and (min-width: 1158px) {
-
-    .third-title {
-        font-size: 20px;
-        font-weight: 500;
-        text-align: left;
-    }
-}
 
 /* ================================ */
 /* ========== SECTION-TWO ========= */
@@ -769,6 +775,8 @@ body {
    
 .section-two .services {
 gap: 72px 24px;
+width: 736px;
+height: 312px;
 }
 
 .team-list {
@@ -800,7 +808,7 @@ gap: 72px 24px;
         border: 1px solid #8E8F99;
         border-radius: 4px;
         flex-wrap: wrap;
-        margin-bottom: 8px;
+
     }
          .team-list {
              width: calc((100% - 72px) / 4);
@@ -814,7 +822,12 @@ gap: 72px 24px;
             gap:24px;
          }
         
-                 
+                 .third-title {
+                     font-size: 20px;
+                     font-weight: 500;
+                     text-align: left;
+                     line-height: 1.2;
+                 }
 
 }
 
@@ -1021,6 +1034,7 @@ gap: 72px 24px;
 
 
 /* Переопределения на Tablet */
+
 @media screen and (min-width: 768px) {
  .section-fourth .card-container {
      width: 356px;
@@ -1134,8 +1148,8 @@ gap: 72px 24px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin: 0;
-    padding: 0 0 16px;
+    margin: 0 0 16px;
+    padding: 0;
 }
 
 .logo-footer {
@@ -1174,7 +1188,7 @@ gap: 72px 24px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
     
 }
 
@@ -1198,8 +1212,8 @@ gap: 72px 24px;
 }
  .footer-block-two {
     display: block;
-    padding-top: 72px;
-    padding-bottom: 72px;
+    margin-top: 72px;
+    margin-bottom: 72px;
  }
 
 .container-footer-form {
@@ -1283,6 +1297,7 @@ gap: 72px 24px;
     width: 208px;
     height: 80px;
     padding: 0;
+    margin: 0;
 }
 
 
